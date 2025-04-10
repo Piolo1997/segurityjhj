@@ -1,0 +1,108 @@
+﻿/* Estilo para GridView */
+.custom-grindview {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: center;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    background: url('../resources/Imágenes/JHJ.png') no-repeat center center;
+    background-size: cover;
+    background-blend-mode: lighten;
+    color: #333;
+}
+
+    /* Estilo para los encabezados */
+    .custom-grindview .header {
+        background-color: lightblue;
+        color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+
+    /* Estilo para las filas */
+    .custom-grindview .row {
+        display: contents;
+        background-color: white;
+        border-bottom: 1px solid #ddd;
+        transition: background-color 0.3s ease;
+    }
+
+        .custom-grindview .row:hover {
+            background-color: #f1f1f1;
+        }
+
+    .custom-grindview .alt-row {
+        background-color: #f9f9f9;
+    }
+
+    /* Estilo para las celdas */
+    .custom-grindview td {
+        padding: 15px;
+        border: 1px solid #ddd;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* Botones dentro del GridView */
+    .custom-grindview .row a,
+    .custom-grindview .row .aspNetDisabled {
+        display: inline-block;
+        padding: 8px 15px;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #3498db;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    .custom-grindview .alt-row a,
+    .custom-grindview .alt-row .aspNetDisabled {
+        display: inline-block;
+        padding: 8px 15px;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #3498db;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+/* Botón de creación destacado */
+h2 a {
+    float: right;
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: black;
+    background-color: lightskyblue;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+    h2 a:hover {
+        background-color: deepskyblue;
+        transform: translateY(-2px);
+    }
+
+/* Imagen de fondo del GridView */
+.custom-grindview::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: -1;
+}

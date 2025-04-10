@@ -1,0 +1,83 @@
+﻿/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('/resources/Imágenes/Fondo.jpg'); /* Cambia la ruta si tienes otro fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal */
+.container {
+    background: rgba(255, 255, 255, 0.15); /* Fondo blanco transparente */
+    width: 350px;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombras suaves */
+    text-align: center;
+}
+
+.logo-container {
+    justify-content: center;
+}
+/* Logo */
+.logo {
+    width: 350px !important;
+}
+
+/* Título */
+h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* Campos de entrada */
+.item-input-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Botón */
+.button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 25px; /* Bordes redondeados */
+    background-color: #32CD32; /* Verde brillante (LimeGreen) */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+    .button:hover {
+        background-color: #2E8B57; /* Verde más oscuro al pasar el mouse */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    }
+
+/* Mensaje de error */
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
